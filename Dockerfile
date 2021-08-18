@@ -4,7 +4,7 @@ LABEL maintainer="Rhuan Karlus Silva"
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update
-RUN apt-get install -y make gcc
+RUN apt-get install -y make gcc git
 RUN rm -rf /var/lib/apt/lists/*
 RUN pip install -U pip
 RUN pip install -U poetry
